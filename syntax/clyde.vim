@@ -21,11 +21,7 @@ syn match clydeTag "\v\#[A-Za-z0-9_]+"
 syn match clydeLineId "\v\$[A-Za-z0-9_]+"
 syn match clydeSpeaker "\v[A-Za-z0-9_ ]+:"
 syn match clydeBlock "^==.*$" contains=clydeBlockName
-syn match clydeOptionSymbols "[*+]"
-
-"
-" Logic blocks
-"
+syn match clydeOptionSymbols "\v^[ 	]*[*+>]"
 syn keyword clydeLogicConstants contained OPTIONS_COUNT
 syn keyword clydeLogicKeywords contained set trigger when
 
@@ -47,7 +43,6 @@ syn region clydeLogicBlock start="\v\{" end="\v\}" fold transparent contains=cly
 syn match clydeVariationsMarker "[-]" contained
 syn keyword clydeVariationsType contained shuffle once sequence cycle
 syn region clydeVariationsBlock start="(" end=")" fold transparent contains=clydeVariationsType,clydeVariationsMarker
-
 
 " Set highlights
 hi default link clydeTodo Todo
