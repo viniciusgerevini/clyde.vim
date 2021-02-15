@@ -6,6 +6,6 @@ Syntax file for [Clyde](https://github.com/viniciusgerevini/clyde) dialogue lang
 
 Using [vim-plug](https://github.com/junegunn/vim-plug):
 
-    Plug 'calviken/vim-gdscript3'
+    Plug 'viniciusgerevini/clyde.vim'
 
 Or any other plugin manager of your choice.
